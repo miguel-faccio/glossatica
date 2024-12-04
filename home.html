@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossática</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/icons/logo.png" />
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+      <img src="assets/icons/logo.png" class="logo">
+        <h1>Bem-vindo à Glossática</h1>
+ 
+    </header>
+
+    <!-- Navegação -->
+    <nav>
+        
+        <a href="home.html" class="active">Termos Matemáticos</a>
+    </nav>
+    <div class="banner">
+   
+  </div>
+    <!-- Conteúdo Principal -->
+    <main>
+      <div class="main-header">
+        <h2>Explore os Termos Matemáticos</h2>
+        <p>Pesquise ou explore os termos em várias categorias!</p>
+      </div>
+        <section class="termos" id="termos">
+            <!-- Barra de Pesquisa -->
+  <div id="searchBG">
+    <div class="search-container" id="search">
+      <div class="selected-tags" id="selectedTags"></div>
+      <div class="search-bar">
+        <input
+                type="text"
+                id="searchInput"
+                placeholder="Digite algo para buscar..."
+                oninput="autocompleteSuggestions(this.value)"
+        />
+        <button onclick="performSearch()">🔍</button>
+      </div>
+    </div>
+      <div class="search-container " id="search">
+      <div class="tags-suggestions" id="tagsSuggestions"></div>
+      <div class="results-container" id="resultsContainer"></div>
+    </div>
+    
+  </div>
+</main>
+
+<!-- Botão de Voltar ao Topo -->
+<button id="backToTop" onclick="scrollToTop()">⬆️</button>
+
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+
+
+    <!-- Script para Alternar o Modo Escuro -->
+   
+<script src="script.js"></script>
+</body>
+</html>
